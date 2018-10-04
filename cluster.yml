@@ -1,0 +1,18 @@
+nodes:
+    - address: kube1
+      port: 2222
+      user: "{{ user }}"
+      role:
+        - controlplane
+        - etcd
+        - worker
+    - address: kube2
+      port: 2222
+      user: "{{ user }}" 
+      role:
+        - worker
+    - address: kube3
+      port: 2222
+      user: "{{ user }}"
+      role:
+        - worker
